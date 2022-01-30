@@ -1,5 +1,8 @@
 # Svelte Github Blog
-<video src="demo.webm" width="100%"></video>
+<video style="width:100%" controls>
+  <source src="demo.webm">
+  Your browser does not support the video tag.
+</video>
 
 [More Info About This](<https://mframe.ca/blog?file=About%20this%20blog.md>)
 
