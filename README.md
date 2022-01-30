@@ -1,5 +1,5 @@
 # Svelte Github Blog
-<video src="demo.webm" width="100%"/>
+<video src="demo.webm" width="100%"></video>
 
 [More Info About This](<https://mframe.ca/blog?file=About%20this%20blog.md>)
 
