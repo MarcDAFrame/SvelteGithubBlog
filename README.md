@@ -1,4 +1,6 @@
 # Svelte Github Blog
+<video src="demo.webm" width="100%"/>
+
 [More Info About This](<https://mframe.ca/blog?file=About%20this%20blog.md>)
 
 This is a minimum repo to show how to setup a blog using **Github** as your **CMS**
