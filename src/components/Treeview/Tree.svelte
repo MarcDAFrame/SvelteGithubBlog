@@ -6,8 +6,6 @@
 </script>
 
 <script lang="ts">
-	//	import { slide } from 'svelte/transition'
-
 	export let tree: tree_i;
 	const { label, children, link } = tree;
 
@@ -19,11 +17,9 @@
 </script>
 
 <ul>
-	<!-- transition:slide -->
 	<li>
 		{#if children && children.length > 0}
 			<span on:click={toggleExpansion}>
-				<!-- <span class="arrow" class:arrowDown>&#x25b6</span> -->
 				<img class="arrow" class:arrowDown src="res/icons/arrow.svg"/>
 				{label}
 			</span>
@@ -68,19 +64,16 @@
 			transform: translateY(0px);
 		}
 	}
-	// .no-arrow { padding-left: 1.0rem; }
 	.arrow {
 		height: clamp(10px, 10vw, 45px);
 	
 		cursor: pointer;
 		display: inline-block;
-		/* transition: transform 200ms; */
 		-webkit-transition: all 0.3s linear;
 		-moz-transition: all 0.3s linear;
 		-o-transition: all 0.3s linear;
 		transition: all 0.3s linear;
 		&:hover {
-			// font-weight: bold;
 			background-color: rgb(243, 240, 240);
 			border-radius: 16px;
 		}
@@ -95,7 +88,6 @@
 		padding-left: 5px;
 		border-radius: 16px;
 		&:hover {
-			// font-weight: bold;
 			background-color: rgb(243, 240, 240);
 		}
 		&:visited {

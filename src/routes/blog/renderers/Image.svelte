@@ -1,6 +1,5 @@
 <script>
     import { page } from "$app/stores";
-    import { BLOGREPO } from "src/constants";
     import { resolveURL } from "src/routes/blog/renderers/ResolveURL";
 
     export let href = "";

@@ -1,7 +1,7 @@
 import { page } from "$app/stores";
 import { BLOGREPO, REPOBRANCH } from "src/constants";
 
-const join = (...args) => {
+const join = (...args: string[]) => {
     // Split the inputs into a list of path commands.
     var parts = [];
     for (var i = 0, l = args.length; i < l; i++) {
@@ -25,7 +25,7 @@ const join = (...args) => {
     return newParts.join("/") || (newParts.length ? "/" : ".");
   }
 
-export const resolveURL = (href, file) => {
+export const resolveURL = (href: string, file: string) => {
     let href2 = ''
     if(href.includes('http')){
         href2 = href
@@ -37,7 +37,7 @@ export const resolveURL = (href, file) => {
     return href2
 }
 
-export const resolvePath = (href, file) => {
+export const resolvePath = (href: string, file: string) => {
     let href2 = ''
     if(href.includes('http')){
         href2 = href
