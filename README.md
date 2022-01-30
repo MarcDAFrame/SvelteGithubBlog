@@ -1,10 +1,7 @@
 # Svelte Github Blog
-<video style="width:100%" controls>
-  <source src="demo.webm">
-  Your browser does not support the video tag.
-</video>
+![demo](./demo.gif)
 
-[More Info About This](<https://mframe.ca/blog?file=About%20this%20blog.md>)
+## [More Info About This Blog](<https://mframe.ca/blog?file=About%20this%20blog.md>)
 
 This is a minimum repo to show how to setup a blog using **Github** as your **CMS**
 
