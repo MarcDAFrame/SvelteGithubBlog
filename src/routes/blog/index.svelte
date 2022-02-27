@@ -1,9 +1,11 @@
 <script>
     import { page } from "$app/stores";
-    import SvelteMarkdown from "svelte-markdown";
-    import Image from "./renderers/Image.svelte";
-    import Link from "src/routes/blog/renderers/Link.svelte";
     import { getBlog } from "src/stores";
+
+    import SvelteMarkdown from "svelte-markdown";
+    import Image from "src/components/renderers/Image.svelte";
+    import Link from "src/components/renderers/Link.svelte";
+    
     $: file = $page.url.searchParams.get("file");
     const { data, state, rateLimitTime, get } = getBlog();
     $: get(file)

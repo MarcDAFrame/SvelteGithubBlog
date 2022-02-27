@@ -1,7 +1,7 @@
 <script>
     import { page } from "$app/stores";
 
-    import { resolvePath } from "src/routes/blog/renderers/ResolveURL";
+    import { resolvePath } from "src/components/renderers/ResolveURL";
 
     export let href = "";
     export let title = undefined;

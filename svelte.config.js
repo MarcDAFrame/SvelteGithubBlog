@@ -9,11 +9,14 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
+		prerender: {
+			entries: [
+			],
+		},
 		adapter: adapter({
-			// default options are shown
 			pages: 'build',
 			assets: 'build',
-			fallback: null,
+			fallback: 'index.html',
 			precompress: false
 		}),
 		vite: {
